@@ -1,3 +1,4 @@
+import MasonryGrid from "@/components/shared/MasonryGrid";
 import SectionHeader from "@/components/shared/SectionHeader";
 import Branding from "./Branding";
 import Feature1 from "./Feature1";
@@ -24,12 +25,12 @@ export default function Learning() {
             <Feature2 />
           </div>
 
-          <div className="columns-1 gap-x-[1.375rem] space-y-[1.625rem] md:columns-2 lg:columns-3">
+          <MasonryGrid className="gap-x-[1.375rem] space-y-[1.625rem]">
             <Feature3 />
             <Branding />
             <Feature4 />
             <Feature5 />
-          </div>
+          </MasonryGrid>
         </div>
       </div>
     </section>
