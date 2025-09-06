@@ -1,3 +1,4 @@
+import { Map } from "@/components/shared/icons";
 import MasonryGrid from "@/components/shared/MasonryGrid";
 import SectionHeader from "@/components/shared/SectionHeader";
 import Branding from "./Branding";
@@ -6,14 +7,13 @@ import Feature2 from "./Feature2";
 import Feature3 from "./Feature3";
 import Feature4 from "./Feature4";
 import Feature5 from "./Feature5";
-import MapIcon from "./MapIcon";
 
 export default function Learning() {
   return (
     <section className="flex flex-col items-center justify-center bg-[#050222] py-40">
       <div className="h-[85%] w-[80%]">
         <SectionHeader
-          badgeIcon={<MapIcon />}
+          badgeIcon={<Map />}
           title="Learn new skills"
           highlight="faster, together."
           description="A new way to gather, expand, and put to practice your skills"

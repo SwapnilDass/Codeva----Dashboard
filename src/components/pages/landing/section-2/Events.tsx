@@ -1,10 +1,10 @@
-import SectionHeader from "@/components/shared/SectionHeader";
-import CalendarSvg from "./CalendarSvg";
-import EventGallery from "./EventGallery";
-import { HTMLAttributes } from "react";
-import clsx from "clsx";
-import EventHighlight from "./EventHighlight";
+import { Calendar } from "@/components/shared/icons";
 import SectionContainer from "@/components/shared/SectionContainer";
+import SectionHeader from "@/components/shared/SectionHeader";
+import clsx from "clsx";
+import { HTMLAttributes } from "react";
+import EventGallery from "./EventGallery";
+import EventHighlight from "./EventHighlight";
 
 interface EventsProps extends HTMLAttributes<HTMLElement> {}
 
@@ -16,7 +16,7 @@ export default function Events({ className, ...props }: EventsProps) {
     >
       <SectionContainer>
         <SectionHeader
-          badgeIcon={<CalendarSvg />}
+          badgeIcon={<Calendar />}
           title="Educative events,"
           highlight="Redesigned"
           description="Creating a more globally accessible way of participating, organizing, and managing events. All through one Platform."
