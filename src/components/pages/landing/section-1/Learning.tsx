@@ -1,6 +1,7 @@
-import { Map } from "@/components/shared/icons";
 import MasonryGrid from "@/components/shared/MasonryGrid";
+import SectionContainer from "@/components/shared/SectionContainer";
 import SectionHeader from "@/components/shared/SectionHeader";
+import { Map } from "@/components/shared/icons";
 import Branding from "./Branding";
 import Feature1 from "./Feature1";
 import Feature2 from "./Feature2";
@@ -10,29 +11,27 @@ import Feature5 from "./Feature5";
 
 export default function Learning() {
   return (
-    <section className="flex flex-col items-center justify-center bg-[#050222] py-40">
-      <div className="h-[85%] w-[80%]">
-        <SectionHeader
-          badgeIcon={<Map />}
-          title="Learn new skills"
-          highlight="faster, together."
-          description="A new way to gather, expand, and put to practice your skills"
-        />
+    <SectionContainer>
+      <SectionHeader
+        badgeIcon={<Map />}
+        title="Learn new skills"
+        highlight="faster, together."
+        description="A new way to gather, expand, and put to practice your skills"
+      />
 
-        <div className="space-y-[1.375rem]">
-          <div className="columns-1 gap-x-[1.375rem] space-y-[1.625rem] lg:columns-2">
-            <Feature1 />
-            <Feature2 />
-          </div>
-
-          <MasonryGrid className="gap-x-[1.375rem] space-y-[1.625rem]">
-            <Feature3 />
-            <Branding />
-            <Feature4 />
-            <Feature5 />
-          </MasonryGrid>
+      <div className="space-y-[1.375rem]">
+        <div className="columns-1 gap-x-[1.375rem] space-y-[1.625rem] lg:columns-2">
+          <Feature1 />
+          <Feature2 />
         </div>
+
+        <MasonryGrid className="gap-x-[1.375rem] space-y-[1.625rem]">
+          <Feature3 />
+          <Branding />
+          <Feature4 />
+          <Feature5 />
+        </MasonryGrid>
       </div>
-    </section>
+    </SectionContainer>
   );
 }

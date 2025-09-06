@@ -1,7 +1,6 @@
 import SectionContainer from "@/components/shared/SectionContainer";
 import SectionHeader from "@/components/shared/SectionHeader";
 import { Plane } from "@/components/shared/icons";
-import clsx from "clsx";
 import { HTMLAttributes } from "react";
 import TestimonialGrid from "./TestimonialGrid";
 
@@ -12,21 +11,16 @@ export default function Testimonials({
   ...props
 }: TestimonialsProps) {
   return (
-    <section
-      className={clsx("flex flex-col items-center bg-inherit", className)}
-      {...props}
-    >
-      <SectionContainer>
-        <SectionHeader
-          badgeIcon={<Plane />}
-          title="Bringing students together,"
-          highlight="One step at a time."
-          description="Building the future of learning by making it accessible to students worldwide."
-        />
+    <SectionContainer className={className} {...props}>
+      <SectionHeader
+        badgeIcon={<Plane />}
+        title="Bringing students together,"
+        highlight="One step at a time."
+        description="Building the future of learning by making it accessible to students worldwide."
+      />
 
-        {/* User reviews/testimonials */}
-        <TestimonialGrid />
-      </SectionContainer>
-    </section>
+      {/* User reviews/testimonials */}
+      <TestimonialGrid />
+    </SectionContainer>
   );
 }
