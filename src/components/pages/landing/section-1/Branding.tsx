@@ -24,7 +24,7 @@ function DottedBackground() {
         <path
           d="M200.368 213.81L535.494 200.87L763.88 337.083L636.347 519.17L200.368 213.81Z"
           fill="#3F1C8A"
-          fill-opacity="0.46"
+          fillOpacity="0.46"
         />
       </g>
       <rect
@@ -34,7 +34,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="166.863"
@@ -43,7 +43,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="272.78"
@@ -52,7 +52,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="669.634"
@@ -61,7 +61,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="827.84"
@@ -70,7 +70,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="805.048"
@@ -79,7 +79,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="622.709"
@@ -88,7 +88,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="440.37"
@@ -97,7 +97,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="338.475"
@@ -106,7 +106,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="236.58"
@@ -115,7 +115,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="461.822"
@@ -124,7 +124,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="687.064"
@@ -133,7 +133,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="839.906"
@@ -142,7 +142,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <rect
         x="821.136"
@@ -151,7 +151,7 @@ function DottedBackground() {
         height="2.68145"
         rx="1.34072"
         fill="white"
-        fill-opacity="0.58"
+        fillOpacity="0.58"
       />
       <defs>
         <filter
@@ -161,9 +161,9 @@ function DottedBackground() {
           width="963.512"
           height="718.3"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -203,8 +203,8 @@ function CodevaLogo() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(335.027 139.867) rotate(28.872) scale(345.207 706.247)"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#999999" stop-opacity="0.43" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#999999" stopOpacity="0.43" />
         </radialGradient>
       </defs>
     </svg>
