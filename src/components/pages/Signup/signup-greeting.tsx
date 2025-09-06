@@ -1,5 +1,3 @@
-import React from "react";
-
 interface GreetingProps {
   title?: string;
   subtitle?: string;
