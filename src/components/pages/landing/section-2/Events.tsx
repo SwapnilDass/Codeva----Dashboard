@@ -1,30 +1,24 @@
-import SectionHeader from "@/components/shared/SectionHeader";
-import CalendarSvg from "./CalendarSvg";
-import EventGallery from "./EventGallery";
-import { HTMLAttributes } from "react";
-import clsx from "clsx";
-import EventHighlight from "./EventHighlight";
+import { Calendar } from "@/components/shared/icons";
 import SectionContainer from "@/components/shared/SectionContainer";
+import SectionHeader from "@/components/shared/SectionHeader";
+import { HTMLAttributes } from "react";
+import EventGallery from "./EventGallery";
+import EventHighlight from "./EventHighlight";
 
 interface EventsProps extends HTMLAttributes<HTMLElement> {}
 
 export default function Events({ className, ...props }: EventsProps) {
   return (
-    <section
-      className={clsx("flex flex-col items-center bg-inherit", className)}
-      {...props}
-    >
-      <SectionContainer>
-        <SectionHeader
-          badgeIcon={<CalendarSvg />}
-          title="Educative events,"
-          highlight="Redesigned"
-          description="Creating a more globally accessible way of participating, organizing, and managing events. All through one Platform."
-        />
+    <SectionContainer className={className} {...props}>
+      <SectionHeader
+        badgeIcon={<Calendar />}
+        title="Educative events,"
+        highlight="Redesigned"
+        description="Creating a more globally accessible way of participating, organizing, and managing events. All through one Platform."
+      />
 
-        <EventGallery />
-        <EventHighlight />
-      </SectionContainer>
-    </section>
+      <EventGallery />
+      <EventHighlight />
+    </SectionContainer>
   );
 }

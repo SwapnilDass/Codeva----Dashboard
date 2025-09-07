@@ -1,10 +1,10 @@
+import EmailField from "@/components/pages/Login/EmailField";
+import OrDivider from "@/components/pages/Login/OrDivider";
+import PassField from "@/components/pages/Login/PassField";
+import SocialButtons from "@/components/pages/Login/SocialButtons";
+import Footer from "@/components/pages/Login/footer";
+import Logo from "@/components/pages/Login/logo";
 import React from "react";
-import EmailField from "../Login/EmailField";
-import OrDivider from "../Login/OrDivider";
-import PassField from "../Login/PassField";
-import SocialButtons from "../Login/SocialButtons";
-import Footer from "../Login/footer";
-import Logo from "../Login/logo";
 import SignUpButton from "./signup-button";
 import Greeting from "./signup-greeting";
 

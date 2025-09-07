@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="hidden h-full w-[90%] items-center justify-between rounded-xl border border-[#9373d95e] px-4 sm:w-[95%] md:flex md:w-[80%] lg:w-[65%]">
         {/* Logo */}
         <img
-          src="../../../brand/png/Branding.png"
+          src="/brand/png/Branding.png"
           alt="Codeva"
           className="h-[50%] sm:h-[45%] md:h-[40%] lg:h-[50%]"
         />
@@ -32,11 +32,7 @@ export default function Navbar() {
               href="/"
               className="flex aspect-square h-[60%] cursor-pointer flex-col items-center justify-center gap-1 rounded-md bg-[#C2A6FF] bg-opacity-30 hover:opacity-100"
             >
-              <img
-                src={`../../../nav/nav_${num}.png`}
-                alt=""
-                className="h-[40%]"
-              />
+              <img src={`/nav/nav_${num}.png`} alt="" className="h-[40%]" />
             </a>
           ))}
         </div>
@@ -53,11 +49,7 @@ export default function Navbar() {
       {/* Mobile Navbar */}
       <div className="flex h-full w-[80%] items-center justify-between rounded-xl border border-[#9373d95e] px-4 md:hidden">
         {/* Logo */}
-        <img
-          src="../../../brand/png/Branding.png"
-          alt="Codeva"
-          className="h-[35%]"
-        />
+        <img src="/brand/png/Branding.png" alt="Codeva" className="h-[35%]" />
 
         {/* Hamburger Menu */}
         <div className="flex h-[40%] w-10 cursor-pointer items-center justify-center">

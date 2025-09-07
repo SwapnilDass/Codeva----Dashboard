@@ -12,9 +12,7 @@ export default function Landing() {
       id="landing"
       className="h-[100vh] w-[100vw] bg-[#050222] text-white"
     >
-      <div className="overflow-hidden bg-inherit px-4 pt-4">
-        <Hero />
-      </div>
+      <Hero />
       <Partners />
       <Learning />
       <Events className="py-12" />

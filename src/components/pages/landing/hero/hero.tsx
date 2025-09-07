@@ -5,16 +5,10 @@ import Navbar from "@/components/ui/Navbar";
 import ShinyButton from "@/components/ui/shiny-button";
 import { cn } from "@/lib/utils";
 
-export default function Hero() {
-  return (
-    <section className="relative flex h-fit min-h-screen flex-col items-center justify-center gap-y-16 overflow-hidden rounded-xl pb-28 pt-8 [background:radial-gradient(circle_at_50%_10%,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.73)_50%,rgba(81,21,140,1)_100%)] max-[450px]:min-h-[100vh] max-[400px]:gap-y-16 sm:pb-32 md:gap-y-24 md:shadow-xl lg:pb-36">
-      {/* Navbar moved slightly higher */}
-      <div className="flex w-full justify-center max-md:-translate-y-14">
-        <Navbar />
-      </div>
 
-      {/* Main content */}
-      <div className="-mt-2 flex flex-col items-center justify-center gap-y-6 text-center">
+function MainContent() {
+  return (
+<div className="-mt-2 flex flex-col items-center justify-center gap-y-6 text-center">
         <BlurFade delay={0.5} inView>
           <h1
             className="text-center text-3xl font-medium max-[400px]:text-[7.5vw] max-[400px]:leading-[9vw] min-[500px]:text-4xl min-[650px]:text-5xl lg:text-6xl xl:text-7xl"
@@ -93,21 +87,38 @@ export default function Hero() {
           </BlurFade>
         </div>
       </div>
+  )
+}
+function Background() {
+  return (
+    <DotPattern
+          className={cn(
+            // First mask: radial (center bright → edges transparent)
+            "[mask-image:radial-gradient(65rem_circle_at_center,white,rgba(0,0,0,0)_10%)]",
+            
+            // Second mask: horizontal fade (sides transparent)
+            "[mask-image:linear-gradient(to_right,transparent,white_50%,white_50%,transparent)]",
+            
+            // Combine the two masks together
+            "[mask-composite:intersect] [mask-position:center] [mask-repeat:no-repeat]",
+            
+            "z-0",
+          )}
+    />
+  )
+}
+export default function Hero() {
+  return (
+    <div className="overflow-hidden bg-inherit px-4 pt-4">
+      <section className="relative flex h-fit min-h-screen flex-col items-center justify-center gap-y-16 overflow-hidden rounded-xl pb-28 pt-8 [background:radial-gradient(circle_at_50%_10%,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.73)_50%,rgba(81,21,140,1)_100%)] max-[450px]:min-h-[100vh] max-[400px]:gap-y-16 sm:pb-32 md:gap-y-24 md:shadow-xl lg:pb-36">
+        <div className="flex w-full justify-center max-md:-translate-y-14">
+          <Navbar />
+        </div>
 
-      <DotPattern
-        className={cn(
-          // First mask: radial (center bright → edges transparent)
-          "[mask-image:radial-gradient(65rem_circle_at_center,white,rgba(0,0,0,0)_10%)]",
+        < MainContent />
 
-          // Second mask: horizontal fade (sides transparent)
-          "[mask-image:linear-gradient(to_right,transparent,white_50%,white_50%,transparent)]",
-
-          // Combine the two masks together
-          "[mask-composite:intersect] [mask-position:center] [mask-repeat:no-repeat]",
-
-          "z-0",
-        )}
-      />
-    </section>
+        <Background />
+      </section>
+    </div>
   );
 }
