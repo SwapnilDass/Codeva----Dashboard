@@ -1,6 +1,6 @@
-import MasonryGrid from "@/components/shared/masonrygrid";
-import SectionContainer from "@/components/shared/sectioncontainer";
-import SectionHeader from "@/components/shared/sectionheader";
+import MasonryGrid from "@/components/shared/masonryGrid";
+import SectionContainer from "@/components/shared/sectionContainer";
+import SectionHeader from "@/components/shared/sectionHeader";
 import { Map } from "@/components/shared/icons";
 import Branding from "./branding";
 import Feature1 from "./feature1";

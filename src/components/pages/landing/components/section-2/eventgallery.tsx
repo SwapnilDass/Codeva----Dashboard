@@ -1,7 +1,7 @@
 import { HTMLAttributes } from "react";
 import clsx from "clsx";
 import BlurFade from "@/components/ui/blur-fade";
-import MasonryGrid from "@/components/shared/masonrygrid";
+import MasonryGrid from "@/components/shared/masonryGrid";
 
 interface EventGallery extends HTMLAttributes<HTMLDivElement> {}
 

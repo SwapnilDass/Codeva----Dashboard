@@ -1,111 +1,109 @@
 import BlurFade from "@/components/ui/blur-fade";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { DotPattern } from "@/components/ui/dot-pattern";
-import Navbar from "@/components/ui/Navbar";
+import Navbar from "@/components/ui/navbar";
 import ShinyButton from "@/components/ui/shiny-button";
 import { cn } from "@/lib/utils";
 
-
 function MainContent() {
   return (
-<div className="-mt-2 flex flex-col items-center justify-center gap-y-6 text-center">
-        <BlurFade delay={0.5} inView>
-          <h1
-            className="text-center text-3xl font-medium max-[400px]:text-[7.5vw] max-[400px]:leading-[9vw] min-[500px]:text-4xl min-[650px]:text-5xl lg:text-6xl xl:text-7xl"
-            style={{
-              background:
-                "linear-gradient(0deg, #FFF -4.78%, rgba(255, 255, 255, 0.00) 223.03%)",
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            Millions of STEM Students. <br /> One Platform.
-          </h1>
-        </BlurFade>
-
-        <BlurFade delay={0.75} inView>
-          <p
-            className="mx-auto w-[90vw] max-w-[950px] text-sm font-medium max-[400px]:w-[95vw] max-[400px]:text-[.775rem] md:w-[80vw] md:text-base lg:text-[1.25em] lg:text-lg"
-            style={{
-              background:
-                "linear-gradient(180deg, #EAEAEA 0%, rgba(234, 234, 234, 0.00) 321.67%)",
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            Connect with millions of STEM students worldwide on Codeva! Learn,
-            share, and collaborate on coding, math, physics, and more — join
-            competitions, host events, create projects, and make friends
-            globally.
-          </p>
-        </BlurFade>
-
-        <div
-          className="flex flex-row items-center justify-center"
-          onClick={() => {
-            window.location.href = "";
+    <div className="-mt-2 flex flex-col items-center justify-center gap-y-6 text-center">
+      <BlurFade delay={0.5} inView>
+        <h1
+          className="text-center text-3xl font-medium max-[400px]:text-[7.5vw] max-[400px]:leading-[9vw] min-[500px]:text-4xl min-[650px]:text-5xl lg:text-6xl xl:text-7xl"
+          style={{
+            background:
+              "linear-gradient(0deg, #FFF -4.78%, rgba(255, 255, 255, 0.00) 223.03%)",
+            backgroundClip: "text",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
           }}
         >
-          <BlurFade delay={1} inView>
-            <span
-              className="rounded-full"
-              onClick={() => {
-                window.location.href = "https://www.instagram.com/codeva.cs/";
-              }}
-            >
-              <ShinyButton className="group rounded-full border border-solid border-[rgba(255,255,255,.3)] bg-black px-6 py-2 text-sm max-[400px]:text-xs lg:text-base min-[1350px]:px-8 min-[1350px]:py-4">
-                <span
-                  className="transition-all duration-300 ease-in-out"
-                  style={{
-                    marginRight: ".5rem",
-                  }}
-                >
-                  ✨
-                </span>
+          Millions of STEM Students. <br /> One Platform.
+        </h1>
+      </BlurFade>
 
-                <span
-                  className="bg-[radial-gradient(67.93%_101.18%_at_44.51%_75%,#ED066B_0%,rgba(249,236,225,0.9)_100%)] bg-clip-text text-transparent transition-all duration-300 ease-in-out group-hover:ml-3"
-                  style={{
-                    backgroundClip: "text",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
-                  Keep Track of the Progress.
-                </span>
-              </ShinyButton>
-              <BorderBeam
-                size={200}
-                duration={12}
-                delay={0}
-                colorFrom="#5F2BAF"
-                colorTo="#ED066B"
-              />
-            </span>
-          </BlurFade>
-        </div>
+      <BlurFade delay={0.75} inView>
+        <p
+          className="mx-auto w-[90vw] max-w-[950px] text-sm font-medium max-[400px]:w-[95vw] max-[400px]:text-[.775rem] md:w-[80vw] md:text-base lg:text-[1.25em] lg:text-lg"
+          style={{
+            background:
+              "linear-gradient(180deg, #EAEAEA 0%, rgba(234, 234, 234, 0.00) 321.67%)",
+            backgroundClip: "text",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          Connect with millions of STEM students worldwide on Codeva! Learn,
+          share, and collaborate on coding, math, physics, and more — join
+          competitions, host events, create projects, and make friends globally.
+        </p>
+      </BlurFade>
+
+      <div
+        className="flex flex-row items-center justify-center"
+        onClick={() => {
+          window.location.href = "";
+        }}
+      >
+        <BlurFade delay={1} inView>
+          <span
+            className="rounded-full"
+            onClick={() => {
+              window.location.href = "https://www.instagram.com/codeva.cs/";
+            }}
+          >
+            <ShinyButton className="group rounded-full border border-solid border-[rgba(255,255,255,.3)] bg-black px-6 py-2 text-sm max-[400px]:text-xs lg:text-base min-[1350px]:px-8 min-[1350px]:py-4">
+              <span
+                className="transition-all duration-300 ease-in-out"
+                style={{
+                  marginRight: ".5rem",
+                }}
+              >
+                ✨
+              </span>
+
+              <span
+                className="bg-[radial-gradient(67.93%_101.18%_at_44.51%_75%,#ED066B_0%,rgba(249,236,225,0.9)_100%)] bg-clip-text text-transparent transition-all duration-300 ease-in-out group-hover:ml-3"
+                style={{
+                  backgroundClip: "text",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Keep Track of the Progress.
+              </span>
+            </ShinyButton>
+            <BorderBeam
+              size={200}
+              duration={12}
+              delay={0}
+              colorFrom="#5F2BAF"
+              colorTo="#ED066B"
+            />
+          </span>
+        </BlurFade>
       </div>
-  )
+    </div>
+  );
 }
 function Background() {
   return (
     <DotPattern
-          className={cn(
-            // First mask: radial (center bright → edges transparent)
-            "[mask-image:radial-gradient(65rem_circle_at_center,white,rgba(0,0,0,0)_10%)]",
-            
-            // Second mask: horizontal fade (sides transparent)
-            "[mask-image:linear-gradient(to_right,transparent,white_50%,white_50%,transparent)]",
-            
-            // Combine the two masks together
-            "[mask-composite:intersect] [mask-position:center] [mask-repeat:no-repeat]",
-            
-            "z-0",
-          )}
+      className={cn(
+        // First mask: radial (center bright → edges transparent)
+        "[mask-image:radial-gradient(65rem_circle_at_center,white,rgba(0,0,0,0)_10%)]",
+
+        // Second mask: horizontal fade (sides transparent)
+        "[mask-image:linear-gradient(to_right,transparent,white_50%,white_50%,transparent)]",
+
+        // Combine the two masks together
+        "[mask-composite:intersect] [mask-position:center] [mask-repeat:no-repeat]",
+
+        "z-0",
+      )}
     />
-  )
+  );
 }
 export default function Hero() {
   return (
@@ -115,7 +113,7 @@ export default function Hero() {
           <Navbar />
         </div>
 
-        < MainContent />
+        <MainContent />
 
         <Background />
       </section>
