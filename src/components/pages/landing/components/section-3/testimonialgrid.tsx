@@ -2,7 +2,7 @@ import { useEffect, useState, HTMLAttributes } from "react";
 import TestimonialCard from "./testimonialcard";
 import clsx from "clsx";
 import BlurFade from "@/components/ui/blur-fade";
-import MasonryGrid from "@/components/shared/masonryGrid";
+import MasonryGrid from "@/components/shared/masonrygrid";
 
 interface TestimonialGrid extends HTMLAttributes<HTMLDivElement> {}
 
@@ -154,3 +154,4 @@ export default function TestimonialGrid({
     </div>
   );
 }
+
