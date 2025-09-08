@@ -1,10 +1,10 @@
 import "../../../styles/index.css";
-import Hero from "./hero/hero";
-import Learning from "./section-1/Learning";
-import Events from "./section-2/Events";
-import Testimonials from "./section-3/Testimonials";
-import FooterPage from "../Footer/FooterPage";
-import Partners from "./partners/Partners";
+import Hero from "./components/hero/hero";
+import Learning from "./components/section-1/learning";
+import Events from "./components/section-2/events";
+import Testimonials from "./components/section-3/testimonials";
+import FooterPage from "./components/footer/footerpage";
+import Partners from "./components/partners/partners";
 
 export default function Landing() {
   return (

@@ -1,6 +1,6 @@
 import { HTMLAttributes } from "react";
 import clsx from "clsx";
-import GradientText from "@/components/shared/GradientText";
+import GradientText from "@/components/shared/gradienttext";
 
 interface EventHighlightProps extends HTMLAttributes<HTMLDivElement> {}
 

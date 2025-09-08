@@ -1,8 +1,8 @@
-import SectionContainer from "@/components/shared/SectionContainer";
-import SectionHeader from "@/components/shared/SectionHeader";
+import SectionContainer from "@/components/shared/sectioncontainer";
+import SectionHeader from "@/components/shared/sectionheader";
 import { Plane } from "@/components/shared/icons";
 import { HTMLAttributes } from "react";
-import TestimonialGrid from "./TestimonialGrid";
+import TestimonialGrid from "./testimonialgrid";
 
 interface TestimonialsProps extends HTMLAttributes<HTMLElement> {}
 

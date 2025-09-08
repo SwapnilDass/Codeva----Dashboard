@@ -1,9 +1,9 @@
 import { Calendar } from "@/components/shared/icons";
-import SectionContainer from "@/components/shared/SectionContainer";
-import SectionHeader from "@/components/shared/SectionHeader";
+import SectionContainer from "@/components/shared/sectioncontainer";
+import SectionHeader from "@/components/shared/sectionheader";
 import { HTMLAttributes } from "react";
-import EventGallery from "./EventGallery";
-import EventHighlight from "./EventHighlight";
+import EventGallery from "./eventgallery";
+import EventHighlight from "./eventhighlight";
 
 interface EventsProps extends HTMLAttributes<HTMLElement> {}
 

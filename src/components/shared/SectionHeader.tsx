@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { HTMLAttributes } from "react";
-import SectionBadge from "./SectionBadge";
-import GradientText from "./GradientText";
+import SectionBadge from "./sectionbadge";
+import GradientText from "./gradienttext";
 
 interface SectionHeaderProps extends HTMLAttributes<HTMLElement> {
   badgeIcon: React.ReactNode;

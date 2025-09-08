@@ -1,11 +1,11 @@
-import SignupButton from "@/components//pages/Signup/signup-button";
-import EmailField from "@/components/pages/Login/EmailField";
-import OrDivider from "@/components/pages/Login/OrDivider";
-import PassField from "@/components/pages/Login/PassField";
-import SocialButtons from "@/components/pages/Login/SocialButtons";
-import Footer from "@/components/pages/Login/footer";
-import Logo from "@/components/pages/Login/logo";
-import Greeting from "@/components/pages/Signup/signup-greeting";
+import SignupButtonProps from "../pages/landing/components/signup/signup-button";
+import EmailField from "../pages/landing/components/login/emailfield";
+import OrDivider from "../pages/landing/components/login/ordivider";
+import PassField from "../pages/landing/components/login/passfield";
+import SocialButtons from "../pages/landing/components/login/socialbuttons";
+import Footer from "../pages/landing/components/login/footer";
+import Logo from "../pages/landing/components/login/logo";
+import Greeting from "../pages/landing/components/login/greeting";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -76,7 +76,7 @@ const SignupForm = () => {
         <Greeting />
         <EmailField />
         <PassField />
-        <SignupButton />
+        <SignupButtonProps />
         <AlreadyMember />
         <OrDivider />
         <SocialButtons />

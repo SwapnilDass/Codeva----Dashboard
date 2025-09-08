@@ -1,13 +1,13 @@
-import MasonryGrid from "@/components/shared/MasonryGrid";
-import SectionContainer from "@/components/shared/SectionContainer";
-import SectionHeader from "@/components/shared/SectionHeader";
+import MasonryGrid from "@/components/shared/masonrygrid";
+import SectionContainer from "@/components/shared/sectioncontainer";
+import SectionHeader from "@/components/shared/sectionheader";
 import { Map } from "@/components/shared/icons";
-import Branding from "./Branding";
-import Feature1 from "./Feature1";
-import Feature2 from "./Feature2";
-import Feature3 from "./Feature3";
-import Feature4 from "./Feature4";
-import Feature5 from "./Feature5";
+import Branding from "./branding";
+import Feature1 from "./feature1";
+import Feature2 from "./feature2";
+import Feature3 from "./feature3";
+import Feature4 from "./feature4";
+import Feature5 from "./feature5";
 
 export default function Learning() {
   return (

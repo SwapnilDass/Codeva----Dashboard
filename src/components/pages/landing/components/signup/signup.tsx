@@ -1,11 +1,11 @@
-import EmailField from "@/components/pages/Login/EmailField";
-import OrDivider from "@/components/pages/Login/OrDivider";
-import PassField from "@/components/pages/Login/PassField";
-import SocialButtons from "@/components/pages/Login/SocialButtons";
-import Footer from "@/components/pages/Login/footer";
-import Logo from "@/components/pages/Login/logo";
+import EmailField from "../login/emailfield";
+import OrDivider from "../login/ordivider";
+import PassField from "../login/passfield";
+import SocialButtons from "../login/socialbuttons";
+import Footer from "../login/footer";
+import Logo from "../login/logo";
 import React from "react";
-import SignUpButton from "./signup-button";
+import SignupButtonProps from "./signup-button";
 import Greeting from "./signup-greeting";
 
 const Signup: React.FC = () => {
@@ -24,7 +24,7 @@ const Signup: React.FC = () => {
         <PassField />
 
         {/* Signup button (reuse LoginButton, but customize text) */}
-        <SignUpButton />
+        <SignupButtonProps />
 
         {/* Divider */}
         <OrDivider />

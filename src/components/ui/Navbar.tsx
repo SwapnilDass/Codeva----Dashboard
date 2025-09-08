@@ -1,4 +1,4 @@
-import SingupPopup from "@/components/shared/SignupPopup";
+import SingupPopup from "../shared/signuppopup";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";

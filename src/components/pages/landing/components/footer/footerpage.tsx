@@ -1,10 +1,10 @@
 import React from "react";
-import FooterLogo from "./FooterLogo";
-import GreetingBox from "./GreetingBox"; // main + sub greetings
-import GetStartedButton from "./GetStartedButton"; // import the button
-import SubGreeting from "./SubGreeting";
+import FooterLogo from "./footerlogo";
+import GreetingBox from "./greetingbox";
+import GetStartedButton from "./getstartedbutton";
+import SubGreeting from "./subgreeting";
 
-import FooterBox from "./FooterBox";
+import FooterBox from "./footerbox";
 
 const FooterPage: React.FC = () => {
   return (

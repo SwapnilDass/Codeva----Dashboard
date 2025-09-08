@@ -1,4 +1,4 @@
-import SectionText from "./SectionText";
+import SectionText from "./sectiontext";
 
 export default function Feature3() {
   return (
