@@ -1,5 +1,5 @@
-import SectionContainer from "@/components/shared/sectionContainer";
-import SectionHeader from "@/components/shared/sectionHeader";
+import SectionContainer from "@/components/shared/sectioncontainer";
+import SectionHeader from "@/components/shared/sectionheader";
 import { Plane } from "@/components/shared/icons";
 import { HTMLAttributes } from "react";
 import TestimonialGrid from "./testimonialgrid";
