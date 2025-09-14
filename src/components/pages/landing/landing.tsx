@@ -5,7 +5,20 @@ import Events from "./components/section-2/events";
 import Testimonials from "./components/section-3/testimonials";
 import FooterPage from "./components/footer/footerpage";
 import Partners from "./components/partners/partners";
+import Dashboard from "./components/dashboard/dashboard";
 
+
+export default function Landing() {
+  return (
+    <section
+      id="landing"
+      className="h-[100vh] w-[100vw] bg-[#050222] text-white"
+    >
+      <Dashboard />
+    </section>
+  );
+}
+/*
 export default function Landing() {
   return (
     <section
@@ -21,3 +34,4 @@ export default function Landing() {
     </section>
   );
 }
+*/
