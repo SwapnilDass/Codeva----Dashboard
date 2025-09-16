@@ -3,6 +3,8 @@ import HelpButtons from "./helpbuttons";
 import SidebarDivider from "./sidebardivider";
 import CodevaLogo from "./codevalogo";
 import Navigation from "./navigation";
+import UserProfile from "./userprofile";
+import EventOrganizer from "./eventorganizer";
 
 export default function Sidebar() {
   return (
@@ -21,6 +23,12 @@ export default function Sidebar() {
 
       {/* Add the Navigation component */}
       <Navigation />
+
+      {/* Add the Userprofile component */}
+      <UserProfile />
+
+      {/* Add the Event Organizer component */}
+      <EventOrganizer />
     </aside>
   );
 }
