@@ -1,5 +1,6 @@
 import React from "react";
 import MainNavigation from "./mainnavigation";
+import MainProfile from "./mainprofile";
 
 export default function MainContainer() {
   return (
@@ -8,6 +9,8 @@ export default function MainContainer() {
       bg-[rgba(0,0,0,0.4)] text-white overflow-y-auto"
     >
       <MainNavigation />
+
+      <MainProfile />
     </div>
   );
 }
