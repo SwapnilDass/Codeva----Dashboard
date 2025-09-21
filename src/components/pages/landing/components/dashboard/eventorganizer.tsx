@@ -4,7 +4,7 @@ export default function EventOrganizer() {
   return (
     <div
       className="hidden sm:flex flex-col text-left
-      w-full max-w-full mt-3 rounded-[7px] border border-[rgba(255,255,255,0.30)] 
+      w-full max-w-full mt-7 rounded-[7px] border border-[rgba(255,255,255,0.30)] 
       bg-gradient-to-b from-[rgba(0,0,0,0.40)] to-[#9578B8] 
       px-3 sm:px-4 py-3 sm:py-4 box-border
       max-h-[220px] overflow-hidden"
