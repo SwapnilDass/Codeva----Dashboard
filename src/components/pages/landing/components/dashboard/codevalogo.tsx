@@ -2,9 +2,13 @@ import React from "react";
 
 const CodevaLogo: React.FC = () => {
   return (
-    <div className="flex flex-col items-center mt-3.5"> {/* smaller top margin */}
+    <div className="mb-5 mt-3.5 mt-5 flex flex-col items-center">
+      {" "}
+      {/* smaller top margin */}
       {/* Icon + Text Row */}
-      <div className="flex items-center gap-3"> {/* smaller gap */}
+      <div className="flex items-center gap-3">
+        {" "}
+        {/* smaller gap */}
         {/* SVG Icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -18,9 +22,9 @@ const CodevaLogo: React.FC = () => {
             fill="white"
           />
         </svg>
-
         {/* Text */}
-        <span className="text-white text-base font-bold">Codeva.</span> {/* smaller text */}
+        <span className="text-base font-bold text-white">Codeva.</span>{" "}
+        {/* smaller text */}
       </div>
     </div>
   );

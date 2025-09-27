@@ -7,9 +7,9 @@ const MainProfile: React.FC = () => {
   return (
     <div>
       {/* Top Profile Container */}
-      <div className="flex justify-center mt-8 mb-6">
+      <div className="mb-6 mt-6 flex justify-center">
         <div
-          className="flex items-center justify-between px-10 py-5 rounded-[30px] border border-[rgba(255,255,255,0.19)] backdrop-blur-lg w-[90%] max-w-5xl h-[160px]"
+          className="flex h-[190px] w-[90%] max-w-5xl items-center justify-between rounded-[30px] border border-[rgba(255,255,255,0.19)] px-10 py-5 backdrop-blur-lg"
           style={{
             background: "rgba(26, 26, 26, 0.35)",
           }}
@@ -19,13 +19,13 @@ const MainProfile: React.FC = () => {
             <img
               src="/dashboard/maincontainer/usericon (2).png"
               alt="User Icon"
-              className="w-28 h-28 rounded-full mr-5"
+              className="mr-5 h-28 w-28 rounded-full"
             />
 
             <div className="flex flex-col text-white">
-              <h1 className="text-xl font-semi-bold">Alex Wathens</h1>
+              <h1 className="font-semi-bold text-xl">Alex Wathens</h1>
 
-              <div className="flex items-center mt-1.5">
+              <div className="mt-1.5 flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -42,7 +42,7 @@ const MainProfile: React.FC = () => {
                 <span className="text-xs">May 23, 2005</span>
               </div>
 
-              <div className="flex items-center mt-1.5">
+              <div className="mt-1.5 flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -64,8 +64,8 @@ const MainProfile: React.FC = () => {
           </div>
 
           {/* Right Side: Edit Button */}
-          <button className="flex items-center gap-2 bg-transparent rounded-[100px] border border-white px-6 py-3 hover:bg-white/10 transition-all">
-            <span className="text-white text-sm font-medium">Edit</span>
+          <button className="flex items-center gap-2 rounded-[100px] border border-white bg-transparent px-6 py-3 transition-all hover:bg-white/10">
+            <span className="text-sm font-medium text-white">Edit</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="12"
@@ -84,35 +84,35 @@ const MainProfile: React.FC = () => {
       </div>
 
       {/* Bio Container */}
-      <div className="flex justify-center mb-4">
+      <div className="mb-12 mt-12 flex justify-center">
         <div
-          className="flex justify-between items-center px-10 py-5 rounded-[30px] border border-[rgba(255,255,255,0.19)] backdrop-blur-lg w-[90%] max-w-5xl h-[160px]"
+          className="flex h-[170px] w-[90%] max-w-5xl items-center justify-between rounded-[30px] border border-[rgba(255,255,255,0.19)] px-10 py-5 backdrop-blur-lg"
           style={{
             background: "rgba(26, 26, 26, 0.35)",
           }}
         >
           {/* Left Side: Bio Title + Text + Counter */}
-          <div className="flex flex-col w-[85%] text-white h-full">
+          <div className="flex h-full w-[85%] flex-col text-white">
             <h2
-              className="text-sm font-semibold tracking-wide mb-2"
+              className="mb-2 text-sm font-semibold tracking-wide"
               style={{ color: "rgba(255, 255, 255, 0.8)" }}
             >
               BIO
             </h2>
 
-            <p className="text-sm leading-relaxed break-words mt-3">
+            <p className="mt-3 break-words text-sm leading-relaxed">
               {bioText}
             </p>
 
-            <span className="text-xs text-gray-400 mt-auto">
+            <span className="mt-auto text-xs text-gray-400">
               {bioText.length}/200
             </span>
           </div>
 
           {/* Right Side: Edit Button */}
           <div className="flex items-center">
-            <button className="flex items-center gap-2 bg-transparent rounded-[100px] border border-white px-6 py-3 hover:bg-white/10 transition-all">
-              <span className="text-white text-sm font-medium">Edit</span>
+            <button className="flex items-center gap-2 rounded-[100px] border border-white bg-transparent px-6 py-3 transition-all hover:bg-white/10">
+              <span className="text-sm font-medium text-white">Edit</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
@@ -132,39 +132,59 @@ const MainProfile: React.FC = () => {
       </div>
 
       {/* Achievements Container */}
-      <div className="flex justify-center mb-6">
+      <div className="mb-12 flex justify-center">
         <div
-          className="flex flex-col px-10 py-5 rounded-[30px] border border-[rgba(255,255,255,0.19)] backdrop-blur-lg w-[90%] max-w-5xl h-[120px]"
+          className="flex h-[140px] w-[90%] max-w-5xl flex-col rounded-[30px] border border-[rgba(255,255,255,0.19)] px-10 py-5 backdrop-blur-lg"
           style={{
             background: "rgba(26, 26, 26, 0.35)",
           }}
         >
           <h2
-            className="text-sm font-semibold tracking-wide mb-3"
+            className="mb-3 text-sm font-semibold tracking-wide"
             style={{ color: "rgba(255, 255, 255, 0.8)" }}
           >
             ACHIEVEMENTS
           </h2>
 
           <div className="flex justify-between gap-4">
-            <div className="flex-1 flex items-center justify-center gap-2 px-4 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] h-[50px] text-white text-xs min-w-[150px]">
-              <img src="/dashboard/maincontainer/fire.svg" alt="Star" className="w-4 h-4" />
+            <div className="flex h-[50px] min-w-[150px] flex-1 items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] px-4 text-xs text-white">
+              <img
+                src="/dashboard/maincontainer/fire.svg"
+                alt="Star"
+                className="h-4 w-4"
+              />
               <span>Reached a 50 Days Streak</span>
             </div>
-            <div className="flex-1 flex items-center justify-center gap-2 px-4 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] h-[50px] text-white text-xs min-w-[150px]">
-              <img src="/dashboard/maincontainer/star.svg" alt="Trophy" className="w-4 h-4" />
+            <div className="flex h-[50px] min-w-[150px] flex-1 items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] px-4 text-xs text-white">
+              <img
+                src="/dashboard/maincontainer/star.svg"
+                alt="Trophy"
+                className="h-4 w-4"
+              />
               <span>Participated in 20+ Events</span>
             </div>
-            <div className="flex-1 flex items-center justify-center gap-2 px-4 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] h-[50px] text-white text-xs min-w-[150px]">
-              <img src="/dashboard/maincontainer/trophy.svg" alt="Flash" className="w-4 h-4" />
+            <div className="flex h-[50px] min-w-[150px] flex-1 items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] px-4 text-xs text-white">
+              <img
+                src="/dashboard/maincontainer/trophy.svg"
+                alt="Flash"
+                className="h-4 w-4"
+              />
               <span>Won 5+ Hackathons</span>
             </div>
-            <div className="flex-1 flex items-center justify-center gap-2 px-4 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] h-[50px] text-white text-xs min-w-[150px]">
-              <img src="/dashboard/maincontainer/flash.svg" alt="Crown" className="w-4 h-4" />
+            <div className="flex h-[50px] min-w-[150px] flex-1 items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] px-4 text-xs text-white">
+              <img
+                src="/dashboard/maincontainer/flash.svg"
+                alt="Crown"
+                className="h-4 w-4"
+              />
               <span>Completed 20+ Courses</span>
             </div>
-            <div className="flex-1 flex items-center justify-center gap-2 px-4 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] h-[50px] text-white text-xs min-w-[150px]">
-              <img src="/dashboard/maincontainer/crown.svg" alt="Leader" className="w-4 h-4" />
+            <div className="flex h-[50px] min-w-[150px] flex-1 items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] px-4 text-xs text-white">
+              <img
+                src="/dashboard/maincontainer/crown.svg"
+                alt="Leader"
+                className="h-4 w-4"
+              />
               <span>5x Team Leader</span>
             </div>
           </div>
@@ -172,15 +192,15 @@ const MainProfile: React.FC = () => {
       </div>
 
       {/* Learning Container */}
-      <div className="flex justify-center mb-12">
+      <div className="mb-12 flex justify-center">
         <div
-          className="flex flex-col px-10 py-5 rounded-[30px] border border-[rgba(255,255,255,0.19)] backdrop-blur-lg w-[90%] max-w-5xl h-[120px]"
+          className="flex h-[140px] w-[90%] max-w-5xl flex-col rounded-[30px] border border-[rgba(255,255,255,0.19)] px-10 py-5 backdrop-blur-lg"
           style={{
             background: "rgba(26, 26, 26, 0.35)",
           }}
         >
           <h2
-            className="text-sm font-semibold tracking-wide mb-3"
+            className="mb-3 text-sm font-semibold tracking-wide"
             style={{ color: "rgba(255, 255, 255, 0.8)" }}
           >
             LEARNING
@@ -188,20 +208,32 @@ const MainProfile: React.FC = () => {
 
           <div className="flex justify-between gap-4">
             {/* Mini Container 1 */}
-            <div className="flex-1 flex items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] h-[50px] text-white text-xs min-w-[200px]">
-              <img src="/dashboard/maincontainer/python.svg" alt="Python" className="w-4 h-4" />
+            <div className="flex h-[50px] min-w-[200px] flex-1 items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] text-xs text-white">
+              <img
+                src="/dashboard/maincontainer/python.svg"
+                alt="Python"
+                className="h-4 w-4"
+              />
               <span>Completed a Full Python Course</span>
             </div>
 
             {/* Mini Container 2 */}
-            <div className="flex-1 flex items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] h-[50px] text-white text-xs min-w-[200px]">
-              <img src="/dashboard/maincontainer/javascript.svg" alt="JavaScript" className="w-4 h-4" />
+            <div className="flex h-[50px] min-w-[200px] flex-1 items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] text-xs text-white">
+              <img
+                src="/dashboard/maincontainer/javascript.svg"
+                alt="JavaScript"
+                className="h-4 w-4"
+              />
               <span>Discovering Javascript</span>
             </div>
 
             {/* Mini Container 3 */}
-            <div className="flex-1 flex items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] h-[50px] text-white text-xs min-w-[200px]">
-              <img src="/dashboard/maincontainer/math-function.svg" alt="Math" className="w-4 h-4" />
+            <div className="flex h-[50px] min-w-[200px] flex-1 items-center justify-center gap-2 rounded-[20px] border border-[rgba(255,255,255,0.19)] bg-[rgba(255,255,255,0.05)] text-xs text-white">
+              <img
+                src="/dashboard/maincontainer/math-function.svg"
+                alt="Math"
+                className="h-4 w-4"
+              />
               <span>Math Competition Tryharder</span>
             </div>
           </div>

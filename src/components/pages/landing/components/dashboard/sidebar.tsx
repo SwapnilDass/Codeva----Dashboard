@@ -8,11 +8,7 @@ import EventOrganizer from "./eventorganizer";
 
 export default function Sidebar() {
   return (
-    <aside
-      className="h-full w-full rounded-xl p-4 text-white
-      [background:radial-gradient(113%_113%_at_46%_26%,rgba(1,2,16,1)_10%,rgba(1,2,16,1)_30%,rgba(102,51,238,1)_100%)]"
-    >
-
+    <aside className="h-full w-[360px] rounded-xl p-6 text-white [background:radial-gradient(113%_113%_at_46%_26%,rgba(1,2,16,1)_10%,rgba(1,2,16,1)_30%,rgba(102,51,238,1)_100%)]">
       {/* Add the HelpButtons component */}
       <HelpButtons />
 
